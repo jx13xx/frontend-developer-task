@@ -1,11 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import {
   HeadingOne,
   InputField,
   Paragraph,
-  PrescriptionUploadButton,
   RobotText,
   SubmitButton,
   Subtitle,
@@ -23,18 +20,7 @@ function App() {
     );
   }
 
-  return (
-    <div className="App" style={{ backgroundColor: "black" }}>
-      <SubmitButton>Submit</SubmitButton>
-      <InputField />
-      <RobotText>Robot Text</RobotText>
-      <HeadingOne>This is Heading One</HeadingOne>
-      <Tagline>This is the tagline</Tagline>
-      <Subtitle>This is subtile text</Subtitle>
-      <Paragraph>This is some random sample paraggramphs</Paragraph>
-      {getUploadButton()}
-    </div>
-  );
+  return <div className="App" style={{ backgroundColor: "black" }}></div>;
 }
 
 export default App;
