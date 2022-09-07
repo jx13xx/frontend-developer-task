@@ -1,26 +1,17 @@
 import React from "react";
-import {
-  HeadingOne,
-  InputField,
-  Paragraph,
-  RobotText,
-  SubmitButton,
-  Subtitle,
-  Tagline,
-  UploadButton,
-  UploadPhoto,
-} from "./design-system/components";
+import { Switch, Route } from "react-router-dom";
+import HomeScreen from "./containers/HomeScreen";
+import MembersPage from "./containers/MembersPage";
+import RegistrationPage from "./containers/RegistrationPage";
 
-function App() {
-  function getUploadButton() {
-    return (
-      <UploadButton>
-        <UploadPhoto type="file" />
-      </UploadButton>
-    );
-  }
-
-  return <div className="App" style={{ backgroundColor: "black" }}></div>;
+export default function App() {
+  return (
+    <>
+      <Switch>
+        <Route path="/" component={HomeScreen} />
+        <Route path="/members" component={MembersPage} />
+        <Route path="/new-member" component={RegistrationPage} />
+      </Switch>
+    </>
+  );
 }
-
-export default App;
