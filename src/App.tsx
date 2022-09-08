@@ -6,12 +6,10 @@ import RegistrationPage from "./containers/RegistrationPage";
 
 export default function App() {
   return (
-    <>
-      <Switch>
-        <Route path="/" component={HomeScreen} />
-        <Route path="/members" component={MembersPage} />
-        <Route path="/new-member" component={RegistrationPage} />
-      </Switch>
-    </>
+    <Switch>
+      <Route path="/" component={HomeScreen} />
+      <Route path="/members" component={MembersPage} />
+      <Route path="/new-member" component={RegistrationPage} />
+    </Switch>
   );
 }

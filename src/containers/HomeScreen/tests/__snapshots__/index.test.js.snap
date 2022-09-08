@@ -2,12 +2,96 @@
 
 exports[`<HomeScreen/> should render and match the snapshot 1`] = `
 <div
-  style="background-color: black;"
+  class="sc-iqcoie ebqsGN"
 >
-  <text
-    class="sc-hKMtZM PnIiX"
+  <div
+    class="sc-crXcEl kQasWi"
+    id="user-form"
   >
-    Home Screen
-  </text>
+    <div
+      class="sc-dkzDqf hvbjDy"
+      id="user-form-header"
+    >
+      <text
+        class="sc-jSMfEi gDoUFc"
+      >
+        Become a Member
+      </text>
+      <text
+        class="sc-ftvSup dtRnek"
+      >
+        Enter your valid info to get registered
+      </text>
+    </div>
+    <div
+      class="sc-evZas gHCSVc"
+    >
+      <div
+        class="sc-breuTD dFVKxh"
+      >
+        <label
+          class="sc-eCYdqJ grBoVa"
+        >
+          Full Name
+        </label>
+        <input
+          class="sc-hKMtZM lpsjZE"
+          placeholder="Your full name here"
+          type="text"
+        />
+      </div>
+      <div
+        class="sc-breuTD dFVKxh"
+      >
+        <label
+          class="sc-eCYdqJ grBoVa"
+        >
+          Email Address
+        </label>
+        <input
+          class="sc-hKMtZM lpsjZE"
+          placeholder="Your email address here"
+          type="text"
+        />
+      </div>
+      <div
+        class="sc-breuTD dFVKxh"
+      >
+        <label
+          class="sc-eCYdqJ grBoVa"
+        >
+          Company
+        </label>
+        <input
+          class="sc-hKMtZM lpsjZE"
+          placeholder="Your company"
+          type="text"
+        />
+      </div>
+      <div
+        class="sc-breuTD dFVKxh"
+      >
+        <label
+          class="sc-eCYdqJ grBoVa"
+        >
+          Company Website
+        </label>
+        <input
+          class="sc-hKMtZM lpsjZE"
+          placeholder="Your company website"
+          type="text"
+        />
+      </div>
+      <button
+        class="sc-gsnTZi hAmfdA"
+      >
+        Sign Up Now
+      </button>
+    </div>
+  </div>
+  <img
+    class="sc-ksZaOG dNCRCm"
+    src="[object Object]"
+  />
 </div>
 `;

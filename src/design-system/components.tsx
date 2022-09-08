@@ -18,10 +18,17 @@ export const SubmitButton = styled.button`
   padding: 10px;
   gap: 10px;
   display: flex;
-  width: 416px;
+  width: 100%;
+`;
+
+export const HeaderUserPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 78px;
 `;
 
 export const InputField = styled.input`
+  width: 416px;
   background: #2d2d2d;
   border-color: #2d2d2d;
   color: #969696;
@@ -32,12 +39,23 @@ export const InputField = styled.input`
   padding: 10px;
   gap: 10px;
   &:focus {
-    //outline: none;
     outline-color: #aefb2a;
     border: 1px solid #57ebde;
-    //outline-color: linear-gradient(129.06deg, #aefb2a -21.26%, #57ebde 71.47%);
-    //border-color: linear-gradient(189.06deg, #aefb2a -21.26%, #57ebde 71.47%);
   }
+`;
+
+export const Label = styled.label`
+  width: 82px;
+  height: 21px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #ffffff;
 `;
 
 export const RobotText = styled.text`
@@ -49,6 +67,8 @@ export const RobotText = styled.text`
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
+  display: inline-block;
+  white-space: nowrap;
   /* identical to box height */
 
   color: #ffffff;
@@ -92,6 +112,8 @@ export const Subtitle = styled.text`
   /* identical to box height */
 
   color: #ffffff;
+  display: inline-block;
+  white-space: nowrap;
 `;
 
 export const Paragraph = styled.p`
