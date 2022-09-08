@@ -26,14 +26,6 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: |
-          if [ -e yarn.lock ]; then
-          yarn install --frozen-lockfile
-          elif [ -e package-lock.json ]; then
-          npm ci
-          else
-          npm i
-          fi
-    - run: npm run build --if-present
-    - run: npm run test:ci
+        cache: 'yarn'
+    - run: yarn install --frozen-lockfile
+    - run: yarn test
