@@ -22,6 +22,7 @@ module.exports = {
   transform: {
     "^.+\\.jsx?$": "babel-jest",
     "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.svg$": "<rootDir>/svgTransform.js",
   },
   moduleDirectories: ["node_modules", "src"],
 };
