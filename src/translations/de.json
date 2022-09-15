@@ -1,0 +1,13 @@
+{
+  "homescreen.heading.text": "Mitglied werden",
+  "homescreen.description.text": "Geben Sie Ihre gültigen Informationen ein, um sich zu registrieren",
+  "homescreen.fullName.label": "Vollständiger Name",
+  "homescreen.fullName.placeHolder": "Ihr vollständiger Name hier",
+  "homescreen.emailAddress.label": "E-Mail-Addresse",
+  "homescreen.emailAddress.placeHolder": "Ihre E-Mail-Adresse hier",
+  "homescreen.company.label": "Gesellschaft",
+  "homescreen.company.placeHolder": "Ihr Unternehmen",
+  "homescreen.companyWebsite.label": "Unternehmenswebseite",
+  "homescreen.companyWebsite.placeHolder": "Ihre Firmenwebseite",
+  "homescreen.signUpButton.label": "Jetzt registrieren"
+}
