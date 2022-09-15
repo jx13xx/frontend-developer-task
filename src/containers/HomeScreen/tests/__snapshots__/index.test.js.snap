@@ -27,10 +27,10 @@ exports[`<HomeScreen/> should render and match the snapshot 1`] = `
       class="sc-evZas gHCSVc"
     >
       <div
-        class="sc-breuTD dFVKxh"
+        class="sc-breuTD ggFkQp"
       >
         <label
-          class="sc-eCYdqJ grBoVa"
+          class="sc-eCYdqJ dJSjNS"
         >
           Full Name
         </label>
@@ -41,10 +41,10 @@ exports[`<HomeScreen/> should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="sc-breuTD dFVKxh"
+        class="sc-breuTD ggFkQp"
       >
         <label
-          class="sc-eCYdqJ grBoVa"
+          class="sc-eCYdqJ dJSjNS"
         >
           Email Address
         </label>
@@ -55,10 +55,10 @@ exports[`<HomeScreen/> should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="sc-breuTD dFVKxh"
+        class="sc-breuTD ggFkQp"
       >
         <label
-          class="sc-eCYdqJ grBoVa"
+          class="sc-eCYdqJ dJSjNS"
         >
           Company
         </label>
@@ -69,10 +69,10 @@ exports[`<HomeScreen/> should render and match the snapshot 1`] = `
         />
       </div>
       <div
-        class="sc-breuTD dFVKxh"
+        class="sc-breuTD ggFkQp"
       >
         <label
-          class="sc-eCYdqJ grBoVa"
+          class="sc-eCYdqJ dJSjNS"
         >
           Company Website
         </label>
