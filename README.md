@@ -1,6 +1,6 @@
 # Front End Developer Task
 
-[![build](https://github.com/jx13xx/frontend-developer-task/actions/workflows/build.yml/badge.svg)](https://github.com/jx13xx/frontend-developer-task/actions/workflows/build.yml)
+[![build](https://github.com/jx13xx/frontend-developer-task/actions/workflows/node.js.yml/badge.svg)](https://github.com/jx13xx/frontend-developer-task/actions/workflows/node.js.yml)
 
 
 
