@@ -1,0 +1,13 @@
+{
+  "homescreen.heading.text": "Become a Member",
+  "homescreen.description.text": "Enter your valid info to get registered",
+  "homescreen.fullName.label": "Full Name",
+  "homescreen.fullName.placeHolder": "Your full name here",
+  "homescreen.emailAddress.label": "Email Address",
+  "homescreen.emailAddress.placeHolder": "Your email address here",
+  "homescreen.company.label": "Company",
+  "homescreen.company.placeHolder": "Your Company",
+  "homescreen.companyWebsite.label": "Company Website",
+  "homescreen.companyWebsite.placeHolder": "Your Company Website",
+  "homescreen.signUpButton.label": "Sign Up Now"
+}
