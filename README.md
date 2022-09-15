@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Front End Developer Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![build](https://github.com/jx13xx/frontend-developer-task/actions/workflows/build.yml/badge.svg)](https://github.com/jx13xx/frontend-developer-task/actions/workflows/build.yml)
+
+
 
 ## Available Scripts
 
