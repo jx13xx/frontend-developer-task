@@ -15,39 +15,68 @@ import {
   UserLoginPage,
 } from "./styledComponent";
 import BannerImage from "images/Accent-Elements.svg";
+import { injectIntl } from "react-intl";
+import messages from "./messages";
+import { any, InferProps } from "prop-types";
 
-export default function HomeScreen() {
+function HomeScreen({ intl }: HomeScreenTypes) {
   return (
     <UserLoginPage>
       <UserForm id="user-form">
         <HeaderUserPage id="user-form-header">
-          <RobotText>Become a Member</RobotText>
-          <Subtitle>Enter your valid info to get registered</Subtitle>
+          <RobotText>{intl.formatMessage(messages.headingText)}</RobotText>
+          <Subtitle>{intl.formatMessage(messages.descriptionText)}</Subtitle>
         </HeaderUserPage>
 
         <UserFillUpForm>
           <UserInputBlock>
-            <Label>Full Name</Label>
-            <InputField type="text" placeholder="Your full name here" />
+            <Label>{intl.formatMessage(messages.fullNameLabel)}</Label>
+            <InputField
+              type="text"
+              placeholder={intl.formatMessage(messages.fullNamePlaceHolder)}
+            />
           </UserInputBlock>
 
           <UserInputBlock>
-            <Label>Email Address</Label>
-            <InputField type="text" placeholder="Your email address here" />
+            <Label>{intl.formatMessage(messages.emailAddressLabel)}</Label>
+            <InputField
+              type="text"
+              placeholder={intl.formatMessage(messages.emailAddressPlaceHolder)}
+            />
           </UserInputBlock>
           <UserInputBlock>
-            <Label>Company</Label>
-            <InputField type="text" placeholder="Your company" />
+            <Label>{intl.formatMessage(messages.companyLabel)}</Label>
+            <InputField
+              type="text"
+              placeholder={intl.formatMessage(messages.companyLabelPlaceHolder)}
+            />
           </UserInputBlock>
           <UserInputBlock>
-            <Label>Company Website</Label>
-            <InputField type="text" placeholder="Your company website" />
+            <Label>{intl.formatMessage(messages.companyWebsiteLabel)}</Label>
+            <InputField
+              type="text"
+              placeholder={intl.formatMessage(
+                messages.companyWebsitePlaceHolder
+              )}
+            />
           </UserInputBlock>
 
-          <SubmitButton>Sign Up Now</SubmitButton>
+          <SubmitButton>
+            {intl.formatMessage(messages.signUpButton)}
+          </SubmitButton>
         </UserFillUpForm>
       </UserForm>
       <CoverImage src={BannerImage} />
     </UserLoginPage>
   );
 }
+
+const HomeScreenPropTypes = {
+  intl: any,
+};
+
+type HomeScreenTypes = InferProps<typeof HomeScreenPropTypes>;
+
+HomeScreen.propTypes = HomeScreenPropTypes;
+
+export default injectIntl(HomeScreen);
