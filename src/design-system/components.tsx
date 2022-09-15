@@ -45,14 +45,12 @@ export const InputField = styled.input`
 `;
 
 export const Label = styled.label`
-  width: 82px;
-  height: 21px;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  margin-bottom: 10px;
   /* identical to box height */
 
   color: #ffffff;

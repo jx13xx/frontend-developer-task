@@ -21,6 +21,8 @@ export const UserFillUpForm = styled.div`
 `;
 
 export const UserInputBlock = styled.div`
+  display: flex;
+  flex-direction: column;
   padding-bottom: 20px;
 `;
 
