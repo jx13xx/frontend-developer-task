@@ -129,13 +129,13 @@ export const Paragraph = styled.p`
 `;
 export const UploadButton = styled.button`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  margin-bottom: 20px;
   gap: 4px;
-
-  width: 415px;
+  color: #ffffff;
+  width: 100%;
   height: 50px;
 
   background: #2d2d2d;

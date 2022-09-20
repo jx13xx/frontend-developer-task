@@ -16,7 +16,7 @@ const messages = {
 
 export default function App() {
   return (
-    <IntlProvider locale="en" messages={messages["de"]} defaultLocale="en">
+    <IntlProvider locale="en" messages={messages["en"]} defaultLocale="en">
       <Switch>
         <Route path="/" component={HomeScreen} />
         <Route path="/members" component={MembersPage} />

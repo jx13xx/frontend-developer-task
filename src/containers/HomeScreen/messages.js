@@ -45,4 +45,8 @@ export default defineMessages({
     id: "homescreen.signUpButton.label",
     defaultMessage: "Sign Up Now",
   },
+  uploadButton: {
+    id: "homescreen.uploadButton.label",
+    defaultMessage: "Upload Now",
+  },
 });
