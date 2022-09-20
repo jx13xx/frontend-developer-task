@@ -27,9 +27,18 @@ export const UserInputBlock = styled.div`
 `;
 
 export const CoverImage = styled.img`
+  pointer-events: none;
   position: absolute;
   bottom: -15%;
   right: -10%;
   height: 800px;
   overflow: hidden;
+  @media screen and (max-width: 842px) {
+    display: none;
+  }
+`;
+
+export const UserImageInput = styled.input`
+  display: none;
+  width: 100%;
 `;

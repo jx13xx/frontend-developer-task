@@ -5,7 +5,8 @@ import {
   RobotText,
   SubmitButton,
   Subtitle,
-  Tagline,
+  UploadButton,
+  UploadPhoto,
 } from "../../design-system/components";
 import {
   CoverImage,
@@ -17,9 +18,27 @@ import {
 import BannerImage from "images/Accent-Elements.svg";
 import { injectIntl } from "react-intl";
 import messages from "./messages";
-import { any, InferProps } from "prop-types";
+import PropTypes, { any, InferProps } from "prop-types";
+import React, { useRef } from "react";
 
 function HomeScreen({ intl }: HomeScreenTypes) {
+  const uploadRef = useRef<HTMLInputElement>(null);
+
+  const handleUpload = () => {
+    if (uploadRef.current != null) {
+      uploadRef.current.click();
+    }
+  };
+
+  function handleFileChange(event: React.ChangeEvent<HTMLInputElement>) {
+    const fileObj = event.target.files && event.target.files[0];
+    if (!fileObj) {
+      return;
+    }
+
+    return fileObj;
+  }
+
   return (
     <UserLoginPage>
       <UserForm id="user-form">
@@ -60,7 +79,16 @@ function HomeScreen({ intl }: HomeScreenTypes) {
               )}
             />
           </UserInputBlock>
-
+          <UploadButton onClick={handleUpload} data-testid="upload-btn">
+            <UploadPhoto
+              data-testid="upload-image-input"
+              ref={uploadRef}
+              type="file"
+              accept="image/*"
+              onChange={handleFileChange}
+            />
+            {intl.formatMessage(messages.uploadButton)}
+          </UploadButton>
           <SubmitButton>
             {intl.formatMessage(messages.signUpButton)}
           </SubmitButton>
@@ -73,6 +101,9 @@ function HomeScreen({ intl }: HomeScreenTypes) {
 
 const HomeScreenPropTypes = {
   intl: any,
+  history: PropTypes.shape({
+    push: PropTypes.func.isRequired,
+  }),
 };
 
 type HomeScreenTypes = InferProps<typeof HomeScreenPropTypes>;
